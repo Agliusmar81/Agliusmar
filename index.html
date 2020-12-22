@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Portfoglio - Marco</title>
+		<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+		<link rel="manifest" href="images/favicon/site.webmanifest">
+		<link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="images/favicon/favicon.ico">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="msapplication-config" content="images/favicon/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="stylesheet/normalize.css">
+		<link rel="stylesheet" type="text/css" href="stylesheet/main.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="header">
+					<div class="logo-container">
+						<a href="index.html">
+							<img src="images/logo.png" alt="Logo">
+						</a>
+					</div>
+				<nav>
+				<ul>
+					<li><a href="index.html" class="active">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+				</div>
+			</div>		
+		</header>
+		<main id="main-content">
+			<section id="hero"> 
+				<div class="container"> 
+					<div class="hero-caption"> 
+						<h1>Welcome to my world!</h1> 
+						<h2>Check my adventures</h2> 
+						<a href="#gallery" class="btn">Have a look</a> 
+					</div> 
+				</div> 
+			</section>
+				<section id="gallery">
+					<div class="container">
+						<div class="gallery">
+							<div class="item">
+						<a href="http://localhost:4936/Bielmonte1" target="_blank">
+						<div class="picture">
+							<img src="images/img-1.jpg" alt="img-1">
+						</div>
+						<div class="caption">
+							<p>Ciò che vivo</p>
+						</div>
+					</a>
+			</div>
+			<div class="item">
+						<a href="http://localhost:4936/Bielmonte2" target="_blank">
+						<div class="picture">
+							<img src="images/img-2.jpg" alt="img-2">
+					</div>
+						<div class="caption">
+							<p>Ciò che amo</p>
+							<img src="images/discount.png">
+						</div>
+					</a>
+			</div>
+			<div class="item">
+						<a href="http://localhost:4936/Antrona" target="_blank">
+						<div class="picture">
+							<img src="images/img-3.jpg" alt="img-3">
+						</div>
+						<div class="caption">
+							<p>Ciò che non temo</p>
+						</div>
+					</a>
+			</div>
+			<div class="item">
+						<a href="http://localhost:4936/Devero" target="_blank">
+						<div class="picture">
+							<img src="images/img-4.jpg" alt="img-4">
+						</div>
+						<div class="caption">
+							<p>Cio che sogno</p>
+						</div>
+					</a>
+			</div>
+			<div class="item">
+						<a href="http://localhost:4936/Oropa" target="_blank">
+						<div class="picture">
+							<img src="images/img-5.jpg" alt="img-5">
+						</div>
+						<div class="caption">
+							<p>Ciò in cui credo</p>
+						</div>
+					</a>
+				</div>
+				<div class="container">
+					<div class="description">
+						<br><br><br><br>
+						<script>
+				
+							var text="Viaggi, sogni, emozioni... <br> Goditi la natura, goditi la vita."
+							var speed=80
+							
+							if (document.all||document.getElementById){
+							document.write('<span id="highlight">' + text + '</span>')
+							var storetext=document.getElementById? document.getElementById("highlight") : document.all.highlight
+							}
+							else
+							document.write(text)
+							var hex=new Array("00","14","28","3C","50","64","78","8C","A0","B4","C8","DC","F0")
+							var r=1
+							var g=1
+							var b=1
+							var seq=1
+							function changetext(){
+							rainbow="#"+hex[r]+hex[g]+hex[b]
+							storetext.style.color=rainbow
+							}
+							function change(){
+							if (seq==6){
+							b--
+							if (b==0)
+							seq=1
+							}
+							if (seq==5){
+							r++
+							if (r==12)
+							seq=6
+							}
+							if (seq==4){
+							g--
+							if (g==0)
+							seq=5
+							}
+							if (seq==3){
+							b++
+							if (b==12)
+							seq=4
+							}
+							if (seq==2){
+							r--
+							if (r==0)
+							seq=3
+							}
+							if (seq==1){
+							g++
+							if (g==12)
+							seq=2
+							}
+							changetext()
+							}
+							function starteffect(){
+							if (document.all||document.getElementById)
+							flash=setInterval("change()",speed)
+							}
+							starteffect()
+							</script>
+												
+					</div>
+				</div>
+			</div>		
+		</div>
+	</section>
+	<section id="about" class="clearfix">
+		<div class="container">
+				<div class="profile-pic">
+			<img src="images/2.jpg" alt="profile pic"/>
+		</div>
+		<div class="description">
+			<h1 class="title">About</h1>
+			<p>Chiedimi perché vado in montagna.</p>
+			<p>Chiedimi perché, quando il resto mi sta stretto, l'unica via è il sentiero.</p>
+			<p>Chiedimelo…</p>
+			<p>Perché?</p>
+			<p>Perché in montagna non puoi sprecare fiato per parole inutili. Lo devi conservare per arrivare in cima, e il resto è silenzio, o parole gentili.</p>
+			<p>Perché l'unico peso è lo zaino. Non c'è peso per il cuore.</p>
+			<p>Perché tutti, se lo desiderano, possono arrivare in cima. Anche adagio, un passo dietro l'altro.</p>
+			<p>Perché incroci persone, che trovano ancora un momento per salutarti.</p>
+			<p>In montagna la natura, ti tira per la manica, ti chiede di guardarla, ti dice: "Lascia stare il superfluo. Stai con gli amici.</p>
+			<p>Stai con gli animali. Stai con te stesso. Non ti serve nient'altro</p>
+		</div>
+		</div>
+	</section>
+	<section id="video">
+		<div class="container">
+		<video controls>
+			<source src="../portfoglio - Copia/video/mobile.mp4" type="video/mp4">
+	</video>
+		</div>
+	</section>
+	<section id="video-background">
+		<video autoplay muted loop>
+			<source src="../portfoglio - Copia/video/fisso.mp4" type="video/mp4">
+	</video>
+		<div class="container">
+	<div class="caption">
+		<h1>Momenti di svago...</h1>
+	</div>
+		</div>
+	</section>
+<section id="contact" class="clearfix">
+	<div class="container">
+	<div class="info">	
+		<h1 class="title">Info</h1>
+			<p>Developer FullStack</p>
+			<p>Hiking amatoriale</p>
+		</div>
+			<div class="contacts">
+				<h1 class="title">Contatti</h1>
+			<ul>
+				<li><span class="material-icons">smartphone</span><a href="tel:+393275329249">+393275329249</a></li>
+				<li><span class="material-icons">email</span><a href="mailto:marcoa.81@hotmail.it">marcoa.81@hotmail.it</a></li>
+			</ul>
+		</div>	
+	</div>
+</section>	
+</main>
+	<footer class="main">
+		<div class="social">
+				<a href="https://www.facebook.com/marco.aglio/" target="_blank">
+					<img src="images/facebook.png" alt="facebook"/>
+					</a>
+					<a href="https://twitter.com/agliusmar" target="_blank">
+						<img src="images/twitter.png" alt="twitter"/>
+					</a>
+				</div>
+			<p>Copyright 2020</p>
+		</footer>
+	</body>
+</html>
